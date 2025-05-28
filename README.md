@@ -25,7 +25,7 @@ Your AI-powered email assistant that helps you manage your Gmail inbox effortles
 
 1. Clone the repository
 ```bash
-git clone https://github.com/mdanassaif/EffortlessAgent.git
+git clone https://github.com/mAnas/EffortlessAgent.git
 cd EffortlessAgent
 ```
 
@@ -79,7 +79,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Mohammed Danassaif** - [GitHub](https://github.com/mdanassaif)
+- **Mohd Anas** - [GitHub](https://github.com/mAnas)
 
 ## 🙏 Acknowledgments
 
@@ -88,8 +88,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- Email: hello.mdanassaif@gmail.com
-- Project Link: [https://github.com/mdanassaif/EffortlessAgent](https://github.com/mdanassaif/EffortlessAgent)
+- Email: hello.mAnas@gmail.com
+- Project Link: [https://github.com/mAnas/EffortlessAgent](https://github.com/mAnas/EffortlessAgent)
 
 ## ⭐ Show your support
 
@@ -97,4 +97,4 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-Made with ❤️ by [Mohd Anas](https://github.com/mdanassaif)
+Made with ❤️ by [Mohd Anas](https://github.com/mAnas)
