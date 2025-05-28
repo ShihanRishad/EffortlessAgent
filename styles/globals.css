@@ -1,0 +1,240 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    opacity: 0.2;
+  }
+  50% { 
+    transform: translateY(-30px) rotate(180deg); 
+    opacity: 0.5;
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% { 
+    background: linear-gradient(135deg, #FFFFFF 0%, #CCCCCC 50%, #FFFFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% { 
+    background: linear-gradient(135deg, #FFFFFF 0%, #CCCCCC 50%, #FFFFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.looping-words {
+  height: 2em;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.looping-words__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.looping-words__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.looping-words__item {
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.looping-words__text {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.looping-words__fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #000000 0%, transparent 30%, transparent 70%, #000000 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.looping-words__selector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2em;
+  width: 80%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.looping-words__edge {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #FFFFFF;
+  border-left: 3px solid #FFFFFF;
+  border-radius: 2px;
+  animation: borderPulse 2s ease-in-out infinite;
+}
+
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: #FFFFFF;
+    opacity: 1;
+  }
+  50% {
+    border-color: #FFFFFF;
+    opacity: 0.5;
+  }
+}
+
+.looping-words__edge:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.looping-words__edge:nth-child(2) {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.looping-words__edge:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.looping-words__edge:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  transform: rotate(270deg);
+}
+
+@media (max-width: 768px) {
+  .looping-words {
+    width: 160px;
+  }
+  
+  .looping-words__text {
+    font-size: 1.2em;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Loading animation */
+.loading {
+  display: inline-block;
+  position: relative;
+}
+
+.loading-dots {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 8px;
+}
+
+.loading-dots div {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #666;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading-dots div:nth-child(1) {
+  left: 4px;
+  animation: loading-dots1 0.6s infinite;
+}
+
+.loading-dots div:nth-child(2) {
+  left: 4px;
+  animation: loading-dots2 0.6s infinite;
+}
+
+.loading-dots div:nth-child(3) {
+  left: 16px;
+  animation: loading-dots2 0.6s infinite;
+}
+
+.loading-dots div:nth-child(4) {
+  left: 28px;
+  animation: loading-dots3 0.6s infinite;
+}
+
+@keyframes loading-dots1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loading-dots3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loading-dots2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(12px, 0);
+  }
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
