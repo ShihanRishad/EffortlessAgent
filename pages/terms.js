@@ -47,7 +47,7 @@ const TermsOfService = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Disclaimer</h2>
             <p className="text-gray-600">
-              Effortless Agent is provided "as is". We make no warranties, expressed or implied, and hereby disclaim all warranties of merchantability and fitness for a particular purpose.
+              Effortless Agent is provided &quot;as is&quot;. We make no warranties, expressed or implied, and hereby disclaim all warranties of merchantability and fitness for a particular purpose.
             </p>
           </section>
 
