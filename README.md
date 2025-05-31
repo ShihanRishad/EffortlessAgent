@@ -79,7 +79,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Mohd Anas** - [GitHub](https://github.com/mAnas)
+- **Mohd Anas** - [GitHub](https://github.com/mdanassaif)
 
 ## 🙏 Acknowledgments
 
@@ -89,7 +89,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - Email: hello.mAnas@gmail.com
-- Project Link: [https://github.com/mAnas/EffortlessAgent](https://github.com/mAnas/EffortlessAgent)
+- Project Link: [https://github.com/mdanassaif/EffortlessAgent](https://github.com/mdanassaif/EffortlessAgent)
 
 ## ⭐ Show your support
 
@@ -97,4 +97,4 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-Made with ❤️ by [Mohd Anas](https://github.com/mAnas)
+Made with ❤️ by [Mohd Anas](https://github.com/mdanassaif/)
